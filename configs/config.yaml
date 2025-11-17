@@ -1,0 +1,49 @@
+# Configuration for Document QA Agent
+
+# LLM settings
+llm:
+  provider: "yandexgpt"  # Options: yandexgpt, gigachat
+  model: "yandexgpt-lite"  # or "GigaChat"
+  temperature: 0.3
+  max_tokens: 2000
+  api_key_env: "YANDEX_API_KEY"  # or "GIGACHAT_API_KEY"
+  folder_id_env: "YANDEX_FOLDER_ID"  # For YandexGPT
+
+# Embeddings settings
+embeddings:
+  model: "sentence-transformers/paraphrase-multilingual-mpnet-base-v2"  # Good for Russian
+  chunk_size: 500
+  chunk_overlap: 100
+  batch_size: 32
+
+# Vector database settings
+vectordb:
+  type: "chromadb"  # Options: chromadb, faiss
+  persist_directory: "./data/vectordb"
+  collection_name: "documents"
+  distance_metric: "cosine"
+
+# Retrieval settings
+retrieval:
+  top_k: 5
+  relevance_threshold: 0.7
+  rerank: true
+
+# Document parsing settings
+parsing:
+  supported_formats:
+    - pdf
+    - docx
+    - md
+    - txt
+  extract_tables: true
+  extract_images: false
+  ocr_enabled: false
+
+# Application settings
+app:
+  name: "Document QA Agent"
+  version: "1.0.0"
+  data_dir: "./data"
+  raw_docs_dir: "./data/raw"
+  processed_docs_dir: "./data/processed"
