@@ -32,7 +32,7 @@ streamlit-chat==0.1.1
 # Utilities
 tqdm==4.66.1
 numpy==1.26.2
-pandas==2.1.4
+pandas==2.2.0
 pyyaml==6.0.1
 
 # Development
