@@ -1,5 +1,10 @@
 # Document QA Agent
 
+[![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Streamlit](https://img.shields.io/badge/streamlit-1.29.0-FF4B4B.svg)](https://streamlit.io)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
 Система ответов на вопросы по внутренним нормативным документам организации с использованием RAG (Retrieval-Augmented Generation).
 
 ## Возможности
