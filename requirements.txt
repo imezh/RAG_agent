@@ -14,7 +14,7 @@ pdf2image==1.16.3
 # Vector DB and embeddings
 chromadb==0.4.18
 sentence-transformers==2.2.2
-faiss-cpu==1.7.4
+faiss-cpu==1.9.0.post1
 
 # LLM integration
 langchain==0.1.0
